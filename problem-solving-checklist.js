@@ -1,9 +1,20 @@
 // 1. conversation
-feetToInch
+function feetToInch( feet ) {
+    const inch = feet * 12;
+    return inch;
+}
+let givenFeet = 10;
+const convertedToInch = feetToInch( givenFeet );
+console.log( convertedToInch );
 
 // 2. conversion
-centimeterToMeter
-
+function centimeterToMeter( centimeter ) {
+    const meter = centimeter / 100;
+    return meter;
+}
+let givenCentimeter = 1560;
+const convertdToMeter = centimeterToMeter( givenCentimeter );
+console.log( convertdToMeter );
 
 // 3. calculation
 pageRequirements
