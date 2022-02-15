@@ -17,14 +17,36 @@ const convertdToMeter = centimeterToMeter( givenCentimeter );
 console.log( convertdToMeter );
 
 // 3. calculation
-pageRequirements
+function pageRequirements( quentetyOfBook1, quentetyOfBook2, quentetyOfBook3 ) {
+    const book1Pages = 100;
+    const book2Pages = 200;
+    const book3Pages = 300;
+    const totalPagesPrintedBook1 = book1Pages * quentetyOfBook1;
+    const totalPagesPrintedBook2 = book2Pages * quentetyOfBook2;
+    const totalPagesPrintedBook3 = book3Pages * quentetyOfBook3;
+    const totalPages = totalPagesPrintedBook1 + totalPagesPrintedBook2 + totalPagesPrintedBook3;
+    return totalPages;
+}
 
+const totalPagesPrinted = pageRequirements( 2, 3, 5 );
+console.log( totalPagesPrinted );
 // book1 has 100 pages
 // book2 has 200 pages
 // book3 has 300 pages
 
 //4. friends
-bestFriend
+
 
 //5. will stop the loop if the array has any negative number and returns all the positive number before the negative number
-onlyPositive
+function onlyPositive( prices ) {
+    for ( const elements of prices ) {
+        if ( elements < 0 ) {
+            break;
+        }
+        else {
+            console.log( elements );
+        }
+    }
+}
+let prices = [ 1220, 25, 32, 20, 25, 20, 52, 25, 25, 25, 36, -31, 41, 85, 853, 65 ];
+onlyPositive( prices );
